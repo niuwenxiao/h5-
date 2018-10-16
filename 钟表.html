@@ -106,6 +106,18 @@
         context.restore();
         context.save();
         
+        //绘制数字
+        context.beginPath();
+        for (var i=1;i<13;i++) {
+        	context.rotate(30/180*Math.PI);
+        	context.textAlign='center';
+        	context.textBaseline='middle';
+        	context.fillText(i,140,0,20);
+        }
+        context.restore();
+        context.save();
+        context.closePath();
+        
         //回到初始状态
         context.restore();
         context.restore();
