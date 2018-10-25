@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>照片墙</title>
+	</head>
+	<style type="text/css">
+		body{
+			background-image: url(images/bg3.JPG);
+		}
+		img{
+			height: 140px;
+			width: 130px;
+			align-self: center;
+			padding: 8px;
+			opacity: 0.9;
+		}
+		ul li{
+			float: left;
+			display: inline;
+		}
+		div{
+			height: 210px;
+			width: 150px;
+			background: white;
+			text-align: center;
+			margin-left: 80px;
+			margin-top: 40px;
+		}
+		img:hover{
+			opacity:1;
+		}
+		.div1{
+			transform: rotate(-10deg);
+		}
+		.div1:hover{
+			transform:scale(1.4,1.4);
+			box-shadow: 5px 5px 2px gray;
+		}
+		.div2:hover{
+			transform: scale(1.3,1.3);
+			box-shadow: 5px 5px 2px gray;
+		}
+		.div3{
+			transform: translate(-50px) rotate(-20deg) scale(0.9);
+			transform-origin: top right;
+		}
+		.div3:hover{
+			transform: scale(1.4,1.4);
+			box-shadow: 5px 5px 2px gray;
+		}
+		.div4{
+			transform: rotate(30deg);
+			transform-origin:25% 25% ;
+		}
+		.div4:hover{
+			transform: scale(1.3,1.3);
+			box-shadow: 5px 5px 2px gray;
+		}
+		.div5{
+			transform: rotate(10deg);
+			transform-origin: center top; 
+		}
+		.div5:hover{
+			transform: scale(1.4,1.4);
+			box-shadow: 5px 5px 2px brown;
+		}
+		.div6{
+			transform:skewX(20deg);
+		}
+		.div6:hover{
+			transform: scale(1.3,1.3);
+			box-shadow: 5px 5px 2px cornflowerblue;
+		}
+	</style>
+	<body>
+		<ul>
+			<li>
+				<div class="div1">
+				<img src="images/11.jpg" id="img1">
+				<p>相识</p>
+			    </div>
+			</li>
+			<li>
+				<div class="div2">
+				<img src="images/22.JPG" id="img2"><br />
+				<p>凝视</p>
+			    </div>
+			</li>
+			<li>
+				<div class="div3">
+				<img src="images/33.JPG" id="img3"><br />
+				<p>甜睡</p>
+			    </div>
+			</li>
+			<li>
+				<div class="div4">
+				<img src="images/44.JPG" id="img4"><br />
+				<p>逗乐</p>
+			    </div>
+			</li>
+			<li>
+				<div class="div5">
+				<img src="images/55.JPG" id="img5"><br />
+				<p>奔跑</p>
+			    </div>
+			</li>
+			<li>
+				<div class="div6">
+				<img src="images/66.JPG" id="img6"><br />
+				<p>漠视</p>
+			    </div>
+			</li>
+		</ul>
+	</body>
+</html>
